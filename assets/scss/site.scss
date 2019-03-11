@@ -1,0 +1,202 @@
+$mw-red: #F15742;
+$mw-blue: #356F73;
+$mw-beige-d: #B19D87;
+$mw-beige-l: #d6c9bd;
+$mw-grey: #3b424c;
+$mw-black: #000000;
+
+// MEDIA QUERIES
+
+$mobile-xs: "(max-width: 360px)";
+$mobile-s: "(max-width: 767px)";
+$mobile: "(max-width: 1024px)";
+$desktop-m: "(max-width: 1280px)";
+// usage: @media #{$mobile} { ...styling... }
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	background-color: $mw-beige-l;
+    display: flex;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $mw-grey;
+    font-family: 'Montserrat Alternates', sans-serif;
+	/*font-family: 'Montserrat', sans-serif;*/
+}
+[class^="icon-"], 
+[class*=" icon-"] {
+	font-size: 1.4em;
+	margin-top: -.15em;
+	margin-right: .25em;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+a,
+a:link
+a:visited {
+	color: $mw-red;
+	text-decoration: none;
+}
+abbr {
+	font-variant: small-caps;
+}
+
+h1 {
+	font-size: 2em;
+	font-size: 2rem;
+
+	@media #{$mobile-xs} {
+		font-size: 1.6em;
+		font-size: 1.6rem;
+	}
+}
+
+.btn {
+	background-color: transparent;
+	padding: .5em .75em;
+	border-radius: .3em;
+	border: 1px solid transparentize($mw-beige-d, .5);
+	white-space: nowrap;
+	
+
+	&:hover,
+	&:focus {
+		border-color: $mw-blue;
+		background-color: $mw-blue;
+		color: $mw-beige-l;
+		transition: .3s all linear;
+	}
+} //.btn
+
+.logo {
+	position: relative;
+	width: 542px;
+	max-width: 100%;
+	padding: 2em 1em 6em;
+
+	@media #{$mobile-s} {
+		width: 400px;
+		padding-bottom: 1em;
+	}
+
+	// &:before,
+	// &:after {
+	// 	content: "";
+	// 	display: block;
+	// 	position: absolute;
+	// 	z-index: -1;
+	// 	height: 200vh;
+	// 	margin-top: -250px;
+	// 	transform-origin: 42px 250px;
+	// 	transform: rotate(-27deg);
+	// 	left: 50%;
+	// 	top: 0;
+	// 	transition: 1s all linear;
+	// }
+	// &:before {
+	// 	width: 84px;
+	// 	background-color: transparentize($mw-red, .95);
+	// 	margin-left: -124px;
+	// 	@media #{$mobile-s} {
+	// 		width: 61px;
+	// 		margin-left: -90px;
+	// 	}
+	// 	@media #{$mobile-xs} {
+	// 		width: 45px;
+	// 		margin-left: -66px;
+	// 	}
+	// }
+	// &:after {
+	// 	width: 87px;
+	// 	background-color: transparentize($mw-blue, .95);
+	// 	margin-left: -30px;
+	// 	@media #{$mobile-s} {
+	// 		width: 65px;
+	// 		margin-left: -22px;
+	// 	}
+	// 	@media #{$mobile-xs} {
+	// 		width: 50px;
+	// 		margin-left: -16px;
+	// 	}
+	// }
+
+	// &:hover {
+	// 	&:before {
+	// 		background-color: transparentize($mw-red, .2);
+	// 	}
+	// 	&:after {
+	// 		background-color: transparentize($mw-blue, .2);
+	// 	}
+	// }
+} //.logo
+#malwerk-logo {
+	width: 100%;
+}
+
+.hero {
+	text-align: center;
+	width: 100%;
+
+	h1 {
+		padding: 0 1em;
+	}
+}
+.skill {
+	white-space: nowrap;
+	&:after {
+		content: "\2022";
+		display: inline-block;
+		margin: 0 0 0 .35em;
+	}
+	&:last-child:after {
+		display: none;
+	}
+
+	@media #{$mobile-s} {
+		display: block;
+
+		&:after { display: none; }
+	}
+}
+
+.contact-me {
+	line-height: 3em;
+
+	.btn {
+		margin-right: .5em;
+
+		@media #{$mobile-s} {
+			display: block;
+			border-bottom: none;
+			border-right: none;
+			border-left: none;
+			border-radius: 0;
+			margin-right: 0;
+
+			&:last-child { border-bottom: 1px solid transparentize($mw-beige-d, .5); }
+		}
+	} //.btn
+
+	.title {
+		display: block;
+	} //.title
+}
+
+.footer {
+	padding: .2em .4em;
+	margin-top: 3em;
+}
