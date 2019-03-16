@@ -1,0 +1,54 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?squuho');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?squuho#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?squuho') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?squuho') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?squuho##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone {
+  &:before {
+    content: $icon-phone; 
+  }
+}
+.icon-email2 {
+  &:before {
+    content: $icon-email2; 
+  }
+}
+.icon-email {
+  &:before {
+    content: $icon-email; 
+  }
+}
+.icon-whatsapp {
+  &:before {
+    content: $icon-whatsapp; 
+  }
+}
+.icon-telegram {
+  &:before {
+    content: $icon-telegram; 
+  }
+}
+

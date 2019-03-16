@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 16px; }
+
+body {
+  background-color: #d6c9bd;
+  display: flex;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #3b424c;
+  font-family: 'Montserrat Alternates', sans-serif;
+  /*font-family: 'Montserrat', sans-serif;*/ }
+
+[class^="icon-"],
+[class*=" icon-"] {
+  font-size: 1.4em;
+  margin-top: -.15em;
+  margin-right: .25em;
+  vertical-align: middle;
+  display: inline-block; }
+
+a,
+a:link
+a:visited {
+  color: #F15742;
+  text-decoration: none; }
+
+abbr {
+  font-variant: small-caps; }
+
+h1 {
+  font-size: 2em;
+  font-size: 2rem; }
+  @media (max-width: 360px) {
+    h1 {
+      font-size: 1.6em;
+      font-size: 1.6rem; } }
+
+.btn {
+  background-color: transparent;
+  padding: .5em .75em;
+  border-radius: .3em;
+  border: 1px solid rgba(177, 157, 135, 0.5);
+  white-space: nowrap; }
+  .btn:hover, .btn:focus {
+    border-color: #356F73;
+    background-color: #356F73;
+    color: #d6c9bd;
+    transition: .3s all linear; }
+
+.logo {
+  position: relative;
+  width: 542px;
+  max-width: 100%;
+  padding: 2em 1em 6em; }
+  @media (max-width: 767px) {
+    .logo {
+      width: 400px;
+      padding-bottom: 1em; } }
+
+#malwerk-logo {
+  width: 100%; }
+
+.hero {
+  text-align: center;
+  width: 100%; }
+  .hero h1 {
+    padding: 0 1em; }
+
+.skill {
+  white-space: nowrap; }
+  .skill:after {
+    content: "\2022";
+    display: inline-block;
+    margin: 0 0 0 .35em; }
+  .skill:last-child:after {
+    display: none; }
+  @media (max-width: 767px) {
+    .skill {
+      display: block; }
+      .skill:after {
+        display: none; } }
+
+.contact-me {
+  line-height: 3em; }
+  .contact-me .btn {
+    margin-right: .5em; }
+    @media (max-width: 767px) {
+      .contact-me .btn {
+        display: block;
+        border-bottom: none;
+        border-right: none;
+        border-left: none;
+        border-radius: 0;
+        margin-right: 0; }
+        .contact-me .btn:last-child {
+          border-bottom: 1px solid rgba(177, 157, 135, 0.5); } }
+  .contact-me .title {
+    display: block; }
+
+.footer {
+  padding: .2em .4em;
+  margin-top: 3em; }
