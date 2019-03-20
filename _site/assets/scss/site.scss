@@ -92,59 +92,19 @@ h1 {
 		width: 400px;
 		padding-bottom: 1em;
 	}
-
-	// &:before,
-	// &:after {
-	// 	content: "";
-	// 	display: block;
-	// 	position: absolute;
-	// 	z-index: -1;
-	// 	height: 200vh;
-	// 	margin-top: -250px;
-	// 	transform-origin: 42px 250px;
-	// 	transform: rotate(-27deg);
-	// 	left: 50%;
-	// 	top: 0;
-	// 	transition: 1s all linear;
-	// }
-	// &:before {
-	// 	width: 84px;
-	// 	background-color: transparentize($mw-red, .95);
-	// 	margin-left: -124px;
-	// 	@media #{$mobile-s} {
-	// 		width: 61px;
-	// 		margin-left: -90px;
-	// 	}
-	// 	@media #{$mobile-xs} {
-	// 		width: 45px;
-	// 		margin-left: -66px;
-	// 	}
-	// }
-	// &:after {
-	// 	width: 87px;
-	// 	background-color: transparentize($mw-blue, .95);
-	// 	margin-left: -30px;
-	// 	@media #{$mobile-s} {
-	// 		width: 65px;
-	// 		margin-left: -22px;
-	// 	}
-	// 	@media #{$mobile-xs} {
-	// 		width: 50px;
-	// 		margin-left: -16px;
-	// 	}
-	// }
-
-	// &:hover {
-	// 	&:before {
-	// 		background-color: transparentize($mw-red, .2);
-	// 	}
-	// 	&:after {
-	// 		background-color: transparentize($mw-blue, .2);
-	// 	}
-	// }
 } //.logo
 #malwerk-logo {
 	width: 100%;
+}
+
+.lang-selector {
+	font-family: 'Montserrat', 'Montserrat Alternates', sans-serif;
+	font-variant: small-caps;
+
+	.en:lang(en), 
+	.nl:lang(nl) {
+	    font-weight: bold;
+	}
 }
 
 .hero {

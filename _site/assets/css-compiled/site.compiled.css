@@ -69,6 +69,13 @@ h1 {
 #malwerk-logo {
   width: 100%; }
 
+.lang-selector {
+  font-family: 'Montserrat', 'Montserrat Alternates', sans-serif;
+  font-variant: small-caps; }
+  .lang-selector .en:lang(en),
+  .lang-selector .nl:lang(nl) {
+    font-weight: bold; }
+
 .hero {
   text-align: center;
   width: 100%; }
