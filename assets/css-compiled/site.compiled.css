@@ -71,7 +71,24 @@ h1 {
 
 .lang-selector {
   font-family: 'Montserrat', 'Montserrat Alternates', sans-serif;
-  font-variant: small-caps; }
+  font-variant: small-caps;
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  display: flex; }
+  .lang-selector,
+  .lang-selector li {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .lang-selector a,
+  .lang-selector a:link,
+  .lang-selector a:visited {
+    display: block;
+    width: 36px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center; }
   .lang-selector .en:lang(en),
   .lang-selector .nl:lang(nl) {
     font-weight: bold; }
@@ -84,17 +101,15 @@ h1 {
 
 .skill {
   white-space: nowrap; }
-  .skill:after {
-    content: "\2022";
-    display: inline-block;
-    margin: 0 0 0 .35em; }
-  .skill:last-child:after {
-    display: none; }
   @media (max-width: 767px) {
     .skill {
       display: block; }
       .skill:after {
         display: none; } }
+
+@media (max-width: 767px) {
+  .skills .bullet {
+    display: none; } }
 
 .contact-me {
   line-height: 3em; }

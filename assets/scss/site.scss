@@ -100,6 +100,26 @@ h1 {
 .lang-selector {
 	font-family: 'Montserrat', 'Montserrat Alternates', sans-serif;
 	font-variant: small-caps;
+	position: absolute;
+	right: 6px;
+	top: 6px;
+	display: flex;
+
+	&,
+	li {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	a,
+	a:link,
+	a:visited {
+		display: block;
+	    width: 36px;
+		height: 24px;
+		line-height: 24px;
+		text-align: center;
+	}
 
 	.en:lang(en), 
 	.nl:lang(nl) {
@@ -117,20 +137,23 @@ h1 {
 }
 .skill {
 	white-space: nowrap;
-	&:after {
-		content: "\2022";
-		display: inline-block;
-		margin: 0 0 0 .35em;
-	}
-	&:last-child:after {
-		display: none;
-	}
+	// &:after {
+	// 	content: "\2022";
+	// 	display: inline-block;
+	// 	margin: 0 0 0 .35em;
+	// }
+	// &:last-child:after {
+	// 	display: none;
+	// }
 
 	@media #{$mobile-s} {
 		display: block;
 
 		&:after { display: none; }
 	}
+}
+.skills .bullet {
+	@media #{$mobile-s} { display: none; }
 }
 
 .contact-me {

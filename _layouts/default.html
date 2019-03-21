@@ -18,13 +18,19 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,400i,700,700i|Montserrat:400,400i,700,700i" rel="stylesheet">
 	<link href="/assets/fonts/malwerk-icons/style.css" rel="stylesheet">
+	{% assign alternates=site.pages | where:"ref", page.ref | sort: 'lang' %}
+	{% for alternate in alternates %}
+		{% if alternate.lang != page.lang %}
+			<link rel="alternate" hreflang="{{ alternate.lang }}" href="{{ alternate.url }}" />
+		{% endif %}
+	{% endfor %}
 </head>
 <body>
 	<ul class="lang-selector">
-	{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-	{% for page in pages %}
+	{% assign translations=site.pages | where:"ref", page.ref | sort: 'lang' %}
+	{% for translation in translations %}
 	  <li>
-	    <a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
+	    <a href="{{ translation.url }}" class="{{ translation.lang }}">{{ translation.lang }}</a>
 	  </li>
 	{% endfor %}
 	</ul>
