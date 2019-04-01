@@ -33,7 +33,12 @@ a:visited {
   color: #F15742;
   text-decoration: none; }
 
+a:hover,
+a:focus {
+  border-bottom: 2px solid #F15742; }
+
 abbr {
+  font-family: 'Montserrat', 'Montserrat Alternates', sans-serif;
   font-variant: small-caps; }
 
 h1 {
@@ -89,9 +94,13 @@ h1 {
     height: 24px;
     line-height: 24px;
     text-align: center; }
+  .lang-selector a:hover,
+  .lang-selector a:focus {
+    font-weight: bold; }
   .lang-selector .en:lang(en),
   .lang-selector .nl:lang(nl) {
-    font-weight: bold; }
+    font-weight: bold;
+    color: #3b424c; }
 
 .hero {
   text-align: center;

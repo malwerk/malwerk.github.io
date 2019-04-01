@@ -1,3 +1,4 @@
+{% assign t = site.data.translations[page.lang] %}
 <!doctype html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 <head>
@@ -38,8 +39,8 @@
 {{ content }}
 
 <div class="footer">
-	<span>&copy; malwerk 2019</span>
-	<span class="kvk"><abbr>kvk</abbr>: 74149113</span>
+	<span>&copy; malwerk 2019</span> &bull;
+	<span class="kvk">{{ t["kvk"] }}: 74149113</span>
 </div>
 
 

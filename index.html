@@ -1,26 +1,5 @@
 ---
 title: Malwerk
 ref: homepage
+layout: homepage
 ---
-<div class="logo">
-	{% include logo.html %}
-</div>
-<div class="hero">
-	<h1 class="skills"><span class="skill">business analysis</span> <span class="bullet">&bull;</span> <span class="skill">ux / ui design</span> <span class="bullet">&bull;</span> <span class="skill">product ownership</span></h1>
-	<p class="contact-me">
-		<span class="title">Contact me at</span>
-		<a class="btn telegram" href="https://t.me/malwerk"><span class="icon-telegram"></span>  telegram</a>
-		<a class="btn whatsapp" href="https://wa.me/31613833927"><span class="icon-whatsapp"></span>  whatsapp</a>	
-		<a class="btn phone" href="tel:+31613833927"><span class="icon-phone"></span> +31 6 13 833 927</a>
-		{% raw %}
-		<script>(function whatever(){var s='@',n='lets-talk',k='malwerk.nl',e=n+s+k,l='<a class="btn mail"  href=mailto:{{example@domain.com}}><span class="icon-email"></span>{{example@domain.com}}</a>'.replace(/{{.+?(}})/g,e);document.write(l)})()</script>
-		{% endraw %}
-	</p>
-</div>
-
-{% comment %}
-<script>
-    var lang = navigator.language || navigator.userLanguage;
-    if (lang.indexOf('nl') == 0) window.location = '/nl/';
-</script>
-{% endcomment %}
