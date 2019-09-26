@@ -1,53 +1,8 @@
-
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	<title>Malwerk</title>
-	<link href="/assets/css-compiled/site.compiled.css" rel="stylesheet">
-
-	<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
-	<link rel="manifest" href="/assets/img/favicons/site.webmanifest">
-	<link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
-	<link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
-	<meta name="msapplication-TileColor" content="#2b5797">
-	<meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
-	<meta name="theme-color" content="#ffffff">
-
-	<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,400i,700,700i|Montserrat:400,400i,700,700i" rel="stylesheet">
-	<link href="/assets/fonts/malwerk-icons/style.css" rel="stylesheet">
-	
-	
-		
-	
-		
-			<link rel="alternate" hreflang="nl" href="/nl/" />
-		
-	
-</head>
-<body>
-	<ul class="lang-selector">
-	
-	
-	  <li>
-	    <a href="/" class="en">en</a>
-	  </li>
-	
-	  <li>
-	    <a href="/nl/" class="nl">nl</a>
-	  </li>
-	
-	</ul>
-
-
-
-<div class="logo">
-	<?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 180 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="96px" viewBox="0 0 180 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Slice</title>
+    <desc>Created with Sketch.</desc>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="logo" transform="translate(2.921505, 2.033300)" fill="#000000">
             <polygon id="logo-k" points="150.124996 50 150.124996 71.7779998 161.989226 57.0140304 174.45374 57.0139052 164.495098 69.8955854 163.81193 70.7396628 163.731096 70.8514404 175.175355 91.0113525 161.473604 91.0113525 155.793522 81.0095789 150.1765 88 138.1765 88 138.1765 50"></polygon>
@@ -60,44 +15,3 @@
         </g>
     </g>
 </svg>
-</div>
-<div class="hero">
-	<h1 class="skills">
-		
-			<span class="skill">business analysis</span>
-		
-			<span class="bullet">&bull;</span>
-		
-		
-			<span class="skill">ux / ui design</span>
-		
-			<span class="bullet">&bull;</span>
-		
-		
-			<span class="skill">product ownership</span>
-		
-		
-		
-	</h1>
-	<p class="contact-me">
-		<span class="title">Contact me at:</span>
-		<a class="btn telegram" href="https://t.me/malwerk"><span class="icon-telegram"></span>  telegram</a>
-		<a class="btn whatsapp" href="https://wa.me/31613833927"><span class="icon-whatsapp"></span>  whatsapp</a>	
-		<a class="btn phone" href="tel:+31613833927"><span class="icon-phone"></span> +31 6 13 833 927</a>
-		
-		<script>(function whatever(){var s='@',n='lets-talk',k='malwerk.nl',e=n+s+k,l='<a class="btn mail"  href=mailto:{{example@domain.com}}><span class="icon-email"></span>{{example@domain.com}}</a>'.replace(/{{.+?(}})/g,e);document.write(l)})()</script>
-		
-	</p>
-</div>
-
-
-
-<div class="footer">
-	<span>&copy; malwerk 2019</span> &bull;
-	<span class="kvk"><abbr>CoC</abbr> number: 74149113</span>
-</div>
-
-
-
-</body>
-</html>

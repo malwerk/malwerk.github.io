@@ -5,6 +5,7 @@ $mw-beige-l: #d6c9bd;
 $mw-grey: #3b424c;
 $mw-black: #000000;
 
+
 // MEDIA QUERIES
 
 $mobile-xs: "(max-width: 360px)";
@@ -84,6 +85,7 @@ h1 {
 		background-color: $mw-blue;
 		color: $mw-beige-l;
 		transition: .3s all linear;
+		border-bottom-width: 1px;
 	}
 } //.btn
 
@@ -92,6 +94,10 @@ h1 {
 	width: 542px;
 	max-width: 100%;
 	padding: 2em 1em 6em;
+
+	#logo {
+		fill: $mw-beige-d;
+	}
 
 	@media #{$mobile-s} {
 		width: 400px;
@@ -193,3 +199,71 @@ h1 {
 	padding: .2em .4em;
 	margin-top: 3em;
 }
+
+// MONOKAI THEME 
+
+$monokai-bg: #2e2e2e;
+$monokai-comments: #797979;
+$monokai-white: #d6d6d6;
+$monokai-yellow: #e5b567;
+$monokai-green: #b4d273;
+$monokai-orange: #e87d3e;
+$monokai-purple: #9e86c8;
+$monokai-pink: #b05279;
+$monokai-blue: #6c99bb;
+
+body.monokai {
+	background-color: $monokai-bg;
+	color: $monokai-comments;
+
+	a,
+	a:link
+	a:visited {
+		color: $monokai-orange;
+	}
+
+	#malwerk-logo {
+		#bg { fill: $monokai-comments; }
+		#stripe-left { fill: $monokai-pink; }
+		#stripe-right { fill: $monokai-green; }
+	}
+} //body.monokai
+
+$wk-white: #fff;
+$wk-blue: #007ac3;
+$wk-dblue: #00619c;
+$wk-green: #85bc20;
+$wk-red: #e5202e;
+$wk-lgrey: #f2f2f2;
+$wk-dgrey: #757575;
+$wk-black: #474747;
+
+body.wk {
+	background-color: $wk-white;
+	color: $wk-dgrey;
+
+	a,
+	a:link
+	a:visited {
+		color: $wk-red;
+	}
+	.btn {
+		background-color: $wk-green;
+		color: $wk-white;
+		border-color: $wk-green;
+
+		&:hover,
+		&:focus {
+			border-color: $wk-red;
+			background-color: $wk-red;
+			color: $wk-white;
+		}
+
+	}
+
+	#malwerk-logo {
+		#bg { fill: $wk-blue; }
+		#stripe-left { fill: $wk-dblue; }
+		#stripe-right { fill: $wk-green; }
+	}
+} //body.monokai

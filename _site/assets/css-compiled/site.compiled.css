@@ -59,13 +59,16 @@ h1 {
     border-color: #356F73;
     background-color: #356F73;
     color: #d6c9bd;
-    transition: .3s all linear; }
+    transition: .3s all linear;
+    border-bottom-width: 1px; }
 
 .logo {
   position: relative;
   width: 542px;
   max-width: 100%;
   padding: 2em 1em 6em; }
+  .logo #logo {
+    fill: #B19D87; }
   @media (max-width: 767px) {
     .logo {
       width: 400px;
@@ -140,3 +143,39 @@ h1 {
 .footer {
   padding: .2em .4em;
   margin-top: 3em; }
+
+body.monokai {
+  background-color: #2e2e2e;
+  color: #797979; }
+  body.monokai a,
+  body.monokai a:link
+a:visited {
+    color: #e87d3e; }
+  body.monokai #malwerk-logo #bg {
+    fill: #797979; }
+  body.monokai #malwerk-logo #stripe-left {
+    fill: #b05279; }
+  body.monokai #malwerk-logo #stripe-right {
+    fill: #b4d273; }
+
+body.wk {
+  background-color: #fff;
+  color: #757575; }
+  body.wk a,
+  body.wk a:link
+a:visited {
+    color: #e5202e; }
+  body.wk .btn {
+    background-color: #85bc20;
+    color: #fff;
+    border-color: #85bc20; }
+    body.wk .btn:hover, body.wk .btn:focus {
+      border-color: #e5202e;
+      background-color: #e5202e;
+      color: #fff; }
+  body.wk #malwerk-logo #bg {
+    fill: #007ac3; }
+  body.wk #malwerk-logo #stripe-left {
+    fill: #00619c; }
+  body.wk #malwerk-logo #stripe-right {
+    fill: #85bc20; }
