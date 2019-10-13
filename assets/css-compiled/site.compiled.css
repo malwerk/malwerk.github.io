@@ -94,6 +94,7 @@ h1 {
   position: absolute;
   right: 6px;
   top: 6px;
+  z-index: 99;
   display: flex; }
   .lang-selector,
   .lang-selector li {
