@@ -126,7 +126,9 @@ h1 {
 	position: absolute;
 	right: 6px;
 	top: 6px;
-	display: flex;
+	z-index: 999;
+	//display: flex;
+	display: none;
 
 	&,
 	li {
@@ -169,7 +171,7 @@ h1 {
 	white-space: nowrap;
 	display: flex;
 	align-items: center;
-	padding: .15em 1em;
+	padding: .05em 1em;
 
 	@media #{$mobile-s} {
 		display: block;
@@ -178,8 +180,8 @@ h1 {
 	
 	.name {
 		display: block;
-		text-align: right;
-		width: 50%;
+		text-align: center;
+		width: 100%;
 		padding-right: .3em;
 		transition: all .3s ease-in;
 
@@ -263,7 +265,6 @@ a.skill {
 .content {
 	display: flex;
 	width: 100vw;
-	height: 100vh;
 	align-items: stretch;
 
 	.nav {

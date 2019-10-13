@@ -7,37 +7,16 @@ layout: default
 
 
 <div class="content">
-	<div id="informatie-analyse" class="section">
-		informatie analyse
-	</div>
-	<div id="business-analyse" class="section">
-		business analyse
-	</div>
-	<div id="ux-ui-ontwerp" class="section">
-		ux-ui-ontwerp
-	</div>
-	<div id="product-ownership" class="section">
-		product ownership
-	</div>
 	<div class="nav">
 		<div class="logo">
-			<a href="#">{% include logo-grad.html %}</a>
+			{% include logo-grad.html %}
 		</div>
 		<div class="hero">
 			<h1 class="skills">
 				{% for skill in site.data.skills %}
-					{% if skill.link %}
-						<a class="skill {{ skill.cssclass }}" href="#{{ skill.link[page.lang] }}">
-					{% else %}
-						<span class="skill {{ skill.cssclass }}">
-					{% endif %}
-							<span class="name">{{ skill.name[page.lang] | downcase }}</span>
-							<span class="desc">{{ skill.desc[page.lang] }}</span>
-					{% if skill.link %}
-						</a>
-					{% else %}
-						</span>
-					{% endif %}
+					<span class="skill {{ skill.cssclass }}">
+						<span class="name">{{ skill.name[page.lang] | downcase }}</span>
+					</span>
 				{% endfor %}
 			</h1>
 			<p class="contact-me">
