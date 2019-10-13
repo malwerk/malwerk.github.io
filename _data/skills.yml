@@ -1,9 +1,40 @@
 - name:
+    nl: "No-nonsense"
+    en: "No-nonsense"
+  cssclass: "nonsense"
+- name:
     nl: "Informatie analyse"
+    en: "Information analysis"
+  desc:
+    nl: "Ik duik in de details en schrijf duidelijke<br>specificaties voor je developers."
+    en: "I get to the details and provide well<br>written specs to your developers."
+  link:
+    nl: "informatie-analyse"
+    en: "information-analysis"
+- name:
+    nl: "Business analyse"
     en: "Business analysis"
+  desc:
+    nl: "Ik verzamel alle vereisten van je stakeholders<br>en storymap ze in overzichtelijke epics"
+    en: "I gather requirements from your stakeholders<br>and storymap them in clear epics"
+  link:
+    nl: "business-analyse"
+    en: "business-analysis"
 - name:
     nl: "UX / UI ontwerp"
     en: "UX / UI design"
+  desc:
+    nl: "Ik ontwerp optimale task flows<br>en klantervaringen"
+    en: "I design optimized task flows<br>and customer journeys"
+  link:
+    nl: "ux-ui-ontwerp"
+    en: "ux-ui-design"
 - name:
     nl: "Product ownership"
     en: "Product ownership"
+  desc:
+    nl: "Ik plan een product strategie (met je)<br>en prioriteer je epics en stories"
+    en: "I plan a product strategy (with you)<br>and prioritise your epics and stories"
+  link:
+    nl: "product-ownership"
+    en: "product-ownership"

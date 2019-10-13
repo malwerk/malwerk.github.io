@@ -5,28 +5,53 @@ layout: default
 ---
 {% assign t = site.data.translations[page.lang] %}
 
-<div class="logo">
-	{% include logo.html %}
-</div>
-<div class="hero">
-	<h1 class="skills">
-		{% for skill in site.data.skills %}
-			<span class="skill">{{ skill.name[page.lang] | downcase }}</span>
-		{% if forloop.last %}
-		{% else %}
-			<span class="bullet">&bull;</span>
-		{% endif %}
-		{% endfor %}
-	</h1>
-	<p class="contact-me">
-		<span class="title">{{ t["Contact me at"] }}:</span>
-		<a class="btn telegram" href="https://t.me/malwerk"><span class="icon-telegram"></span>  telegram</a>
-		<a class="btn whatsapp" href="https://wa.me/31613833927"><span class="icon-whatsapp"></span>  whatsapp</a>	
-		<a class="btn phone" href="tel:+31613833927"><span class="icon-phone"></span> +31 6 13 833 927</a>
-		{% raw %}
-		<script>(function whatever(){var s='@',n='lets-talk',k='malwerk.nl',e=n+s+k,l='<a class="btn mail"  href=mailto:{{example@domain.com}}><span class="icon-email"></span>{{example@domain.com}}</a>'.replace(/{{.+?(}})/g,e);document.write(l)})()</script>
-		{% endraw %}
-	</p>
+
+<div class="content">
+	<div id="informatie-analyse" class="section">
+		informatie analyse
+	</div>
+	<div id="business-analyse" class="section">
+		business analyse
+	</div>
+	<div id="ux-ui-ontwerp" class="section">
+		ux-ui-ontwerp
+	</div>
+	<div id="product-ownership" class="section">
+		product ownership
+	</div>
+	<div class="nav">
+		<div class="logo">
+			<a href="#">{% include logo-grad.html %}</a>
+		</div>
+		<div class="hero">
+			<h1 class="skills">
+				{% for skill in site.data.skills %}
+					{% if skill.link %}
+						<a class="skill {{ skill.cssclass }}" href="#{{ skill.link[page.lang] }}">
+					{% else %}
+						<span class="skill {{ skill.cssclass }}">
+					{% endif %}
+							<span class="name">{{ skill.name[page.lang] | downcase }}</span>
+							<span class="desc">{{ skill.desc[page.lang] }}</span>
+					{% if skill.link %}
+						</a>
+					{% else %}
+						</span>
+					{% endif %}
+				{% endfor %}
+			</h1>
+			<p class="contact-me">
+				<span class="title">{{ t["Contact me at"] }}:</span>
+				<a class="btn telegram" href="https://t.me/malwerk"><span class="icon-telegram"></span>  telegram</a>
+				<a class="btn whatsapp" href="https://wa.me/31613833927"><span class="icon-whatsapp"></span>  whatsapp</a>	
+				<a class="btn phone" href="tel:+31613833927"><span class="icon-phone"></span> +31 6 13 833 927</a>
+				{% raw %}
+				<script>(function whatever(){var s='@',n='lets-talk',k='malwerk.nl',e=n+s+k,l='<a class="btn mail"  href=mailto:{{example@domain.com}}><span class="icon-email"></span>{{example@domain.com}}</a>'.replace(/{{.+?(}})/g,e);document.write(l)})()</script>
+				{% endraw %}
+			</p>
+		</div>
+	</div>
+		
 </div>
 
 {% comment %}
