@@ -5,7 +5,6 @@ $mw-beige-l: #d6c9bd;
 $mw-grey: #3b424c;
 $mw-black: #000000;
 
-
 // MEDIA QUERIES
 
 $mobile-xs: "(max-width: 360px)";
@@ -126,7 +125,7 @@ h1 {
 	position: absolute;
 	right: 6px;
 	top: 6px;
-	z-index: 99;
+	z-index: 999;
 	display: flex;
 
 	&,
@@ -170,7 +169,7 @@ h1 {
 	white-space: nowrap;
 	display: flex;
 	align-items: center;
-	padding: .15em 1em;
+	padding: .05em 1em;
 
 	@media #{$mobile-s} {
 		display: block;
@@ -179,8 +178,8 @@ h1 {
 	
 	.name {
 		display: block;
-		text-align: right;
-		width: 50%;
+		text-align: center;
+		width: 100%;
 		padding-right: .3em;
 		transition: all .3s ease-in;
 
@@ -264,7 +263,6 @@ a.skill {
 .content {
 	display: flex;
 	width: 100vw;
-	height: 100vh;
 	align-items: stretch;
 
 	.nav {
@@ -370,4 +368,144 @@ body.wk {
 		#stripe-left { fill: $wk-dblue; }
 		#stripe-right { fill: $wk-green; }
 	}
-} //body.monokai
+} //body.wk
+
+
+$zissou-altaccent: #F54B1A;
+$zissou-accent:#01ABE9;
+$zissou-bgaccent:#E5C39E;
+$zissou-bg:#C3CED0;
+$zissou-text:#1B346C;
+$zissou-black:#000000;
+
+body.zissou {
+	background-color: $zissou-bg;
+	color: $zissou-text;
+
+	a,
+	a:link
+	a:visited {
+		color: $zissou-altaccent;
+	}
+	a:hover,
+	a:focus {
+		border-bottom-color: $zissou-altaccent;
+	}
+	.btn {
+		background-color: transparent;
+		border-color: transparentize($zissou-bgaccent, .8);
+		&:hover,
+		&:focus {
+			border-color: $zissou-accent;
+			background-color: $zissou-accent;
+			color: $zissou-bg;
+		}
+	}
+	.logo {
+
+		#logo {
+			fill: $zissou-accent;
+		}
+
+	}
+	.lang-selector {
+		.en:lang(en), 
+		.nl:lang(nl) {
+		    color: $zissou-text;
+		}
+	}
+	.skill {
+		.desc {
+			text-shadow: 0 0 1px $zissou-bgaccent;
+		}
+		&.nonsense { color: $zissou-altaccent!important; }
+	}
+	a.skill {
+
+		&:link,
+		&:visited {
+			color: $zissou-text;
+		}
+		&:focus,
+		&:hover {
+			background-color: transparentize($zissou-bgaccent, .5);
+		}
+	}
+	.contact-me {
+		.btn {
+			@media #{$mobile-s} {
+				&:last-child { border-bottom-color: transparentize($zissou-bgaccent, .7); }
+			}
+		} //.btn
+	}
+} //body.zissou
+
+
+$train-altaccent: #C7B19C;
+$train-accent:#FDD262;
+$train-bgaccent:#C7B19C;
+$train-bg:#446455;
+$train-text:#C7B19C;
+$train-black:#000000;
+
+body.train {
+	background-color: $train-bg;
+	color: $train-text;
+
+	a,
+	a:link
+	a:visited {
+		color: $train-altaccent;
+	}
+	a:hover,
+	a:focus {
+		border-bottom-color: $train-altaccent;
+	}
+	.btn {
+		background-color: transparent;
+		border-color: transparentize($train-bgaccent, .8);
+		&:hover,
+		&:focus {
+			border-color: $train-accent;
+			background-color: $train-accent;
+			color: $train-bg;
+		}
+	}
+	.logo {
+
+		#logo {
+			fill: $train-accent;
+		}
+
+	}
+	.lang-selector {
+		.en:lang(en), 
+		.nl:lang(nl) {
+		    color: $train-text;
+		}
+	}
+	.skill {
+		.desc {
+			text-shadow: 0 0 1px $train-bgaccent;
+		}
+		&.nonsense { color: $train-altaccent!important; }
+	}
+	a.skill {
+
+		&:link,
+		&:visited {
+			color: $train-text;
+		}
+		&:focus,
+		&:hover {
+			background-color: transparentize($train-bgaccent, .5);
+		}
+	}
+	.contact-me {
+		.btn {
+			@media #{$mobile-s} {
+				&:last-child { border-bottom-color: transparentize($train-bgaccent, .7); }
+			}
+		} //.btn
+	}
+} //border: .train;

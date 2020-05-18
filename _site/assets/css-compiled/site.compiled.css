@@ -49,7 +49,6 @@ h1 {
     h1 {
       font-size: 1.6em;
       font-size: 1.6rem; } }
-
 .btn {
   background-color: transparent;
   padding: .5em .75em;
@@ -84,7 +83,6 @@ h1 {
     .logo {
       width: 400px;
       padding-bottom: 1em; } }
-
 #malwerk-logo {
   width: 100%; }
 
@@ -94,7 +92,7 @@ h1 {
   position: absolute;
   right: 6px;
   top: 6px;
-  z-index: 99;
+  z-index: 999;
   display: flex; }
   .lang-selector,
   .lang-selector li {
@@ -127,7 +125,7 @@ h1 {
   white-space: nowrap;
   display: flex;
   align-items: center;
-  padding: .15em 1em; }
+  padding: .05em 1em; }
   @media (max-width: 767px) {
     .skill {
       display: block; }
@@ -135,8 +133,8 @@ h1 {
         display: none; } }
   .skill .name {
     display: block;
-    text-align: right;
-    width: 50%;
+    text-align: center;
+    width: 100%;
     padding-right: .3em;
     transition: all .3s ease-in; }
     @media (max-width: 767px) {
@@ -201,7 +199,6 @@ a.skill {
 .content {
   display: flex;
   width: 100vw;
-  height: 100vh;
   align-items: stretch; }
   .content .nav {
     flex: initial;
@@ -263,3 +260,70 @@ a:visited {
     fill: #00619c; }
   body.wk #malwerk-logo #stripe-right {
     fill: #85bc20; }
+
+body.zissou {
+  background-color: #C3CED0;
+  color: #1B346C; }
+  body.zissou a,
+  body.zissou a:link
+a:visited {
+    color: #F54B1A; }
+  body.zissou a:hover,
+  body.zissou a:focus {
+    border-bottom-color: #F54B1A; }
+  body.zissou .btn {
+    background-color: transparent;
+    border-color: rgba(229, 195, 158, 0.2); }
+    body.zissou .btn:hover, body.zissou .btn:focus {
+      border-color: #01ABE9;
+      background-color: #01ABE9;
+      color: #C3CED0; }
+  body.zissou .logo #logo {
+    fill: #01ABE9; }
+  body.zissou .lang-selector .en:lang(en),
+  body.zissou .lang-selector .nl:lang(nl) {
+    color: #1B346C; }
+  body.zissou .skill .desc {
+    text-shadow: 0 0 1px #E5C39E; }
+  body.zissou .skill.nonsense {
+    color: #F54B1A !important; }
+  body.zissou a.skill:link, body.zissou a.skill:visited {
+    color: #1B346C; }
+  body.zissou a.skill:focus, body.zissou a.skill:hover {
+    background-color: rgba(229, 195, 158, 0.5); }
+  @media (max-width: 767px) {
+    body.zissou .contact-me .btn:last-child {
+      border-bottom-color: rgba(229, 195, 158, 0.3); } }
+body.train {
+  background-color: #446455;
+  color: #C7B19C; }
+  body.train a,
+  body.train a:link
+a:visited {
+    color: #C7B19C; }
+  body.train a:hover,
+  body.train a:focus {
+    border-bottom-color: #C7B19C; }
+  body.train .btn {
+    background-color: transparent;
+    border-color: rgba(199, 177, 156, 0.2); }
+    body.train .btn:hover, body.train .btn:focus {
+      border-color: #FDD262;
+      background-color: #FDD262;
+      color: #446455; }
+  body.train .logo #logo {
+    fill: #FDD262; }
+  body.train .lang-selector .en:lang(en),
+  body.train .lang-selector .nl:lang(nl) {
+    color: #C7B19C; }
+  body.train .skill .desc {
+    text-shadow: 0 0 1px #C7B19C; }
+  body.train .skill.nonsense {
+    color: #C7B19C !important; }
+  body.train a.skill:link, body.train a.skill:visited {
+    color: #C7B19C; }
+  body.train a.skill:focus, body.train a.skill:hover {
+    background-color: rgba(199, 177, 156, 0.5); }
+  @media (max-width: 767px) {
+    body.train .contact-me .btn:last-child {
+      border-bottom-color: rgba(199, 177, 156, 0.3); } }
