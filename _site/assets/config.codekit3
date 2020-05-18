@@ -7,7 +7,7 @@
 		"uuidString": "6ABCEBE4-F6E2-42A6-BD46-FEF359D2E695"
 		}
 	],
-"creatorBuild": "31491",
+"creatorBuild": "31934",
 "files": {
 	"/css-compiled/site.compiled.css": {
 		"aP": 1,
@@ -204,22 +204,11 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
-	"/img/favicons/android-chrome-192x192.png": {
+	"/img/favicons/android-chrome-96x96.png": {
 		"ft": 32768,
-		"iS": 4578,
+		"iS": 7869,
 		"oA": 0,
-		"oAP": "/img/favicons/android-chrome-192x192.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/favicons/android-chrome-512x512.png": {
-		"ft": 32768,
-		"iS": 10864,
-		"oA": 0,
-		"oAP": "/img/favicons/android-chrome-512x512.png",
+		"oAP": "/img/favicons/android-chrome-96x96.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -228,7 +217,7 @@
 		},
 	"/img/favicons/apple-touch-icon.png": {
 		"ft": 32768,
-		"iS": 2788,
+		"iS": 5919,
 		"oA": 0,
 		"oAP": "/img/favicons/apple-touch-icon.png",
 		"oF": 0,
@@ -247,7 +236,7 @@
 		},
 	"/img/favicons/favicon-16x16.png": {
 		"ft": 32768,
-		"iS": 707,
+		"iS": 1315,
 		"oA": 0,
 		"oAP": "/img/favicons/favicon-16x16.png",
 		"oF": 0,
@@ -258,7 +247,7 @@
 		},
 	"/img/favicons/favicon-32x32.png": {
 		"ft": 32768,
-		"iS": 1203,
+		"iS": 2332,
 		"oA": 0,
 		"oAP": "/img/favicons/favicon-32x32.png",
 		"oF": 0,
@@ -285,7 +274,7 @@
 		},
 	"/img/favicons/mstile-150x150.png": {
 		"ft": 32768,
-		"iS": 2512,
+		"iS": 5757,
 		"oA": 0,
 		"oAP": "/img/favicons/mstile-150x150.png",
 		"oF": 0,
@@ -331,6 +320,28 @@
 		"oAP": "/img/favicons/site.webmanifest",
 		"oF": 0
 		},
+	"/img/malwerk-icon-2_0-whitebg.png": {
+		"ft": 32768,
+		"iS": 6530,
+		"oA": 0,
+		"oAP": "/img/malwerk-icon-2_0-whitebg.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/malwerk-icon-2_0.png": {
+		"ft": 32768,
+		"iS": 6999,
+		"oA": 0,
+		"oAP": "/img/malwerk-icon-2_0.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/malwerk-icon-whitebg.png": {
 		"ft": 32768,
 		"iS": 34481,
@@ -368,6 +379,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/img/malwerk-logo-v2_0.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/img/malwerk-logo-v2_1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/malwerk-logo-v2_1.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -831,6 +852,7 @@
 			"flagValue": -1
 			}
 		},
+	"environmentVariablesString": "NODE_ENV:::production",
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
 	"esLintEnvironmentsMask": 1,
@@ -932,6 +954,10 @@
 			"optionString": "'all'"
 			},
 		"default-case": {
+			"active": 0,
+			"optionString": ""
+			},
+		"default-param-last": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -1281,6 +1307,10 @@
 			},
 		"no-implied-eval": {
 			"active": 0,
+			"optionString": ""
+			},
+		"no-import-assign": {
+			"active": 1,
 			"optionString": ""
 			},
 		"no-inline-comments": {
@@ -1706,6 +1736,10 @@
 		"prefer-promise-reject-errors": {
 			"active": 0,
 			"optionString": "{'allowEmptyReject': false}"
+			},
+		"prefer-regex-literals": {
+			"active": 0,
+			"optionString": ""
 			},
 		"prefer-rest-params": {
 			"active": 0,
@@ -2315,7 +2349,6 @@
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 1,
 		"enableJavascript": 0,
-		"ieCompatibility": 0,
 		"mathStyle": 0,
 		"outputStyle": 0,
 		"rewriteURLStyle": 0,
@@ -2455,6 +2488,9 @@
 	"npmTargetDependencyListType": 1,
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
+	"rollupExternals": "",
+	"rollupReplacements": "process.env.NODE_ENV:::$NODE_ENV,,,ENVIRONMENT:::$NODE_ENV",
+	"rollupTreeshakingEnabled": 1,
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules",
 	"sourceFolderName": "source",
 	"susyVersion": 3,
