@@ -120,6 +120,8 @@ h1 {
 
 .skills {
   padding: 0; }
+  .skills i {
+    display: none; }
 
 .skill,
 .adjective {
@@ -188,33 +190,176 @@ a.skill {
 
 @keyframes carousel-3 {
   0% {
-    transform: translateY(0); }
-  40% {
-    transform: translateY(0); }
-  50% {
-    transform: translateY(-33.33%); }
-  90% {
-    transform: translateY(-33.33%); }
+    transform: translateY(0);
+    opacity: 1; }
+  27.3% {
+    transform: translateY(0);
+    opacity: 1; }
+  30.3% {
+    transform: translateY(0);
+    opacity: 0; }
+  30.4% {
+    transform: translateY(-33.33%);
+    opacity: 0; }
+  33.3% {
+    transform: translateY(-33.33%);
+    opacity: 1; }
+  60.6% {
+    transform: translateY(-33.33%);
+    opacity: 1; }
+  63.6% {
+    transform: translateY(-33.33%);
+    opacity: 0; }
+  63.7% {
+    transform: translateY(-66.66%);
+    opacity: 0; }
+  66.6% {
+    transform: translateY(-66.66%);
+    opacity: 1; }
+  94.0% {
+    transform: translateY(-66.66%);
+    opacity: 1; }
+  97.0% {
+    transform: translateY(-66.66%);
+    opacity: 0; }
+  97.1% {
+    transform: translateY(0);
+    opacity: 0; }
   100% {
-    transform: translateY(-66.6%); } }
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes carousel-alt-3 {
+  0% {
+    transform: translateY(0);
+    opacity: 1; }
+  27.3% {
+    transform: translateY(0);
+    opacity: 1; }
+  30.3% {
+    transform: translateY(0);
+    opacity: 0; }
+  30.4% {
+    transform: translateY(-25%);
+    opacity: 0; }
+  33.3% {
+    transform: translateY(-25%);
+    opacity: 1; }
+  60.6% {
+    transform: translateY(-25%);
+    opacity: 1; }
+  63.6% {
+    transform: translateY(-25%);
+    opacity: 0; }
+  63.7% {
+    transform: translateY(-50%);
+    opacity: 0; }
+  66.6% {
+    transform: translateY(-50%);
+    opacity: 1; }
+  94.0% {
+    transform: translateY(-50%);
+    opacity: 1; }
+  97.0% {
+    transform: translateY(-50%);
+    opacity: 0; }
+  97.1% {
+    transform: translateY(-75%);
+    opacity: 0; }
+  100% {
+    transform: translateY(-75%);
+    opacity: 1; } }
 
 @keyframes carousel-4 {
   0% {
-    transform: translateY(0); }
-  15% {
-    transform: translateY(0); }
-  20% {
-    transform: translateY(-25%); }
-  50% {
-    transform: translateY(-25%); }
-  55% {
-    transform: translateY(-50%); }
-  85% {
-    transform: translateY(-50%); }
-  90% {
-    transform: translateY(-75%); }
+    transform: translateY(0);
+    opacity: 1; }
+  19.0% {
+    transform: translateY(0);
+    opacity: 1; }
+  22.0% {
+    transform: translateY(0);
+    opacity: 0; }
+  22.1% {
+    transform: translateY(-25%);
+    opacity: 0; }
+  25.0% {
+    transform: translateY(-25%);
+    opacity: 1; }
+  44.0% {
+    transform: translateY(-25%);
+    opacity: 1; }
+  47.0% {
+    transform: translateY(-25%);
+    opacity: 0; }
+  47.1% {
+    transform: translateY(-50%);
+    opacity: 0; }
+  50.0% {
+    transform: translateY(-50%);
+    opacity: 1; }
+  69.0% {
+    transform: translateY(-50%);
+    opacity: 1; }
+  72.0% {
+    transform: translateY(-50%);
+    opacity: 0; }
+  72.1% {
+    transform: translateY(-75%);
+    opacity: 0; }
+  75.0% {
+    transform: translateY(-75%);
+    opacity: 1; }
+  94.0% {
+    transform: translateY(-75%);
+    opacity: 1; }
+  97.0% {
+    transform: translateY(-75%);
+    opacity: 0; }
+  97.1% {
+    transform: translateY(0);
+    opacity: 0; }
   100% {
-    transform: translateY(-75%); } }
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes carousel-45 {
+  0% {
+    opacity: 1;
+    transform: translateY(0); }
+  17% {
+    opacity: 1; }
+  19.9% {
+    transform: translateY(0);
+    opacity: 0; }
+  20% {
+    transform: translateY(-25%);
+    opacity: 0; }
+  23% {
+    opacity: 1; }
+  49% {
+    opacity: 1; }
+  50% {
+    transform: translateY(-25%);
+    opacity: 0; }
+  55% {
+    transform: translateY(-50%);
+    opacity: 0; }
+  56% {
+    opacity: 1; }
+  84% {
+    opacity: 1; }
+  85% {
+    transform: translateY(-50%);
+    opacity: 0; }
+  90% {
+    transform: translateY(-75%);
+    opacity: 0; }
+  91% {
+    opacity: 1; }
+  100% {
+    transform: translateY(-75%);
+    opacity: 1; } }
 
 @keyframes carousel-5 {
   0% {

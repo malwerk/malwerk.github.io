@@ -13,25 +13,37 @@ layout: default
 		</div>
 		<div class="hero">
 			<h1 class="skills">
-					{% assign num_of_adjectives = site.data.adjectives.size | plus: 1 %}
-					<span class="adjectives-caroussel">
+				{% assign num_of_adjectives = site.data.adjectives.size %}
+				<span class="adjectives-caroussel">
 					<span class="adjectives size-{{ num_of_adjectives }}">
 					{% for adjective in site.data.adjectives %}
 						<span class="adjective">
 							<span class="name">{{ adjective.name[page.lang] | downcase }}</span>
+							{%- if forloop.last -%}
+								<i>: </i>
+							{%- else -%}
+								<i>, </i>
+							{%- endif -%}
 						</span>
 					{% endfor %}
-					{% comment %} repeat first item for fluid transition {% endcomment %}
-						<span class="adjective">
-							<span class="name">{{ site.data.adjectives[0].name[page.lang] | downcase }}</span>
-						</span>
+					{% comment %} optionally repeat first item for fluid transition with moving {% endcomment %}
 					</span>
 				</span>
-				{% for skill in site.data.skills %}
+				{%- for skill in site.data.skills -%}
 					<span class="skill {{ skill.cssclass }}">
+						{%- if forloop.last -%}
+							<i> &amp; </i>
+						{%- elsif forloop.first -%}
+
+						{%- else -%}
+						    <i>; </i>
+						{%- endif -%}
 						<span class="name">{{ skill.name[page.lang] | downcase }}</span>
+						{%- if forloop.last -%}
+							<i>.</i>
+						{%- endif -%}
 					</span>
-				{% endfor %}
+				{%- endfor -%}
 			</h1>
 			<p class="contact-me">
 				<span class="title">{{ t["Contact me at"] }}:</span>
