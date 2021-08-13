@@ -1,8 +1,4 @@
 - name:
-    nl: "No-nonsense"
-    en: "No-nonsense"
-  cssclass: "nonsense"
-- name:
     nl: "Informatie analyse"
     en: "Information analysis"
   desc:

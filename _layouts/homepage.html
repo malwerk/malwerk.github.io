@@ -13,6 +13,20 @@ layout: default
 		</div>
 		<div class="hero">
 			<h1 class="skills">
+					{% assign num_of_adjectives = site.data.adjectives.size | plus: 1 %}
+					<span class="adjectives-caroussel">
+					<span class="adjectives size-{{ num_of_adjectives }}">
+					{% for adjective in site.data.adjectives %}
+						<span class="adjective">
+							<span class="name">{{ adjective.name[page.lang] | downcase }}</span>
+						</span>
+					{% endfor %}
+					{% comment %} repeat first item for fluid transition {% endcomment %}
+						<span class="adjective">
+							<span class="name">{{ site.data.adjectives[0].name[page.lang] | downcase }}</span>
+						</span>
+					</span>
+				</span>
 				{% for skill in site.data.skills %}
 					<span class="skill {{ skill.cssclass }}">
 						<span class="name">{{ skill.name[page.lang] | downcase }}</span>

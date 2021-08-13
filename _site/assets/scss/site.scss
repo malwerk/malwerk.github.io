@@ -165,11 +165,13 @@ h1 {
 .skills {
 	padding: 0;
 }
-.skill {
+.skill,
+.adjective {
 	white-space: nowrap;
 	display: flex;
 	align-items: center;
 	padding: .05em 1em;
+	line-height: 2.4rem;
 
 	@media #{$mobile-s} {
 		display: block;
@@ -217,6 +219,7 @@ h1 {
 	&.nonsense { color: $mw-red!important; }
 } //.skill
 
+
 a.skill {
 	transition: all .5s linear;
 
@@ -230,6 +233,92 @@ a.skill {
 		border-bottom: none;
 	}
 }
+@keyframes carousel-3 {  
+	0% { transform: translateY(0); }
+	40% { transform: translateY(0); }
+    50% { transform: translateY(-33.33%); }
+	90% { transform: translateY(-33.33%); }
+    100% { transform: translateY(-66.6%); }
+}
+@keyframes carousel-4 {  
+	0% { transform: translateY(0); }
+	15% { transform: translateY(0); }	
+	
+    20% { transform: translateY(-25%); }
+	50% { transform: translateY(-25%); }
+	
+	55% { transform: translateY(-50%); }
+	85% { transform: translateY(-50%); }
+	
+    90% { transform: translateY(-75%); }
+	100% { transform: translateY(-75%); }
+}
+@keyframes carousel-5 {  
+	0% { transform: translateY(0); }
+	12% { transform: translateY(0); }	
+	
+    18% { transform: translateY(-16.667%); }
+	28% { transform: translateY(-16.667%); }
+	
+	34% { transform: translateY(-33.34%); }
+	48% { transform: translateY(-33.34%); }
+	
+    54% { transform: translateY(-50%); }
+	68% { transform: translateY(-50%); }
+	
+	74% { transform: translateY(-66.666%); }
+	88% { transform: translateY(-66.666%); }
+	
+	94% { transform: translateY(-83.333%); }
+	100% { transform: translateY(-83.333%); }
+}
+
+.adjectives-caroussel {
+	overflow: hidden;
+	height: calc(2.4rem + 4px);
+	display: block;
+	position: relative;
+	&:before,
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		left: 0;
+		right: 0;
+		height: 8px;
+		z-index: 10;
+	}
+	&:before {
+		top:0;
+	}
+	&:after {
+		bottom:0;
+		height: 6px;
+	}
+}
+
+.adjectives {
+	display: flex;
+	flex-direction: column;
+	animation-iteration-count: infinite;
+
+	&.size-4 {
+		// width: 400vw;
+		animation-name: carousel-4;
+		animation-duration: 12s;
+	}
+	&.size-3 {
+		// width: 300vw;
+		animation-name: carousel-3;
+		animation-duration: 9s;
+	}
+}
+.adjective {
+	flex: 1;
+}
+
+
+
 
 
 .contact-me {
@@ -423,7 +512,6 @@ body.zissou {
 		.desc {
 			text-shadow: 0 0 1px $zissou-bgaccent;
 		}
-		&.nonsense { color: $zissou-altaccent2!important; }
 	}
 	a.skill {
 
@@ -434,6 +522,17 @@ body.zissou {
 		&:focus,
 		&:hover {
 			background-color: transparentize($zissou-bgaccent, .5);
+		}
+	}
+	.adjectives {
+		color: $zissou-altaccent2
+	}
+	.adjectives-caroussel {
+		&:before {
+			background: linear-gradient(180deg, rgba(195,206,208,1) 0%, rgba(195,206,208,0) 100%);
+		}
+		&:after {
+			background: linear-gradient(0deg, rgba(195,206,208,1) 0%, rgba(195,206,208,0) 100%);
 		}
 	}
 	.contact-me {

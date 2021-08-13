@@ -121,27 +121,34 @@ h1 {
 .skills {
   padding: 0; }
 
-.skill {
+.skill,
+.adjective {
   white-space: nowrap;
   display: flex;
   align-items: center;
-  padding: .05em 1em; }
+  padding: .05em 1em;
+  line-height: 2.4rem; }
   @media (max-width: 767px) {
-    .skill {
+    .skill,
+    .adjective {
       display: block; }
-      .skill:after {
+      .skill:after,
+      .adjective:after {
         display: none; } }
-  .skill .name {
+  .skill .name,
+  .adjective .name {
     display: block;
     text-align: center;
     width: 100%;
     padding-right: .3em;
     transition: all .3s ease-in; }
     @media (max-width: 767px) {
-      .skill .name {
+      .skill .name,
+      .adjective .name {
         text-align: center;
         width: auto; } }
-  .skill .desc {
+  .skill .desc,
+  .adjective .desc {
     display: block;
     font-size: .375em;
     font-weight: bold;
@@ -157,14 +164,18 @@ h1 {
     opacity: 1;
     left: 50%; }
     @media (max-width: 767px) {
-      .skill .desc {
+      .skill .desc,
+      .adjective .desc {
         text-align: center; } }
   @media (max-width: 767px) {
-    .skill {
+    .skill,
+    .adjective {
       display: block; }
-      .skill:after {
+      .skill:after,
+      .adjective:after {
         display: none; } }
-  .skill.nonsense {
+  .skill.nonsense,
+  .adjective.nonsense {
     color: #F15742 !important; }
 
 a.skill {
@@ -174,6 +185,95 @@ a.skill {
   a.skill:focus, a.skill:hover {
     background-color: rgba(177, 157, 135, 0.5);
     border-bottom: none; }
+
+@keyframes carousel-3 {
+  0% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-33.33%); }
+  90% {
+    transform: translateY(-33.33%); }
+  100% {
+    transform: translateY(-66.6%); } }
+
+@keyframes carousel-4 {
+  0% {
+    transform: translateY(0); }
+  15% {
+    transform: translateY(0); }
+  20% {
+    transform: translateY(-25%); }
+  50% {
+    transform: translateY(-25%); }
+  55% {
+    transform: translateY(-50%); }
+  85% {
+    transform: translateY(-50%); }
+  90% {
+    transform: translateY(-75%); }
+  100% {
+    transform: translateY(-75%); } }
+
+@keyframes carousel-5 {
+  0% {
+    transform: translateY(0); }
+  12% {
+    transform: translateY(0); }
+  18% {
+    transform: translateY(-16.667%); }
+  28% {
+    transform: translateY(-16.667%); }
+  34% {
+    transform: translateY(-33.34%); }
+  48% {
+    transform: translateY(-33.34%); }
+  54% {
+    transform: translateY(-50%); }
+  68% {
+    transform: translateY(-50%); }
+  74% {
+    transform: translateY(-66.666%); }
+  88% {
+    transform: translateY(-66.666%); }
+  94% {
+    transform: translateY(-83.333%); }
+  100% {
+    transform: translateY(-83.333%); } }
+
+.adjectives-caroussel {
+  overflow: hidden;
+  height: calc(2.4rem + 4px);
+  display: block;
+  position: relative; }
+  .adjectives-caroussel:before, .adjectives-caroussel:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 8px;
+    z-index: 10; }
+  .adjectives-caroussel:before {
+    top: 0; }
+  .adjectives-caroussel:after {
+    bottom: 0;
+    height: 6px; }
+
+.adjectives {
+  display: flex;
+  flex-direction: column;
+  animation-iteration-count: infinite; }
+  .adjectives.size-4 {
+    animation-name: carousel-4;
+    animation-duration: 12s; }
+  .adjectives.size-3 {
+    animation-name: carousel-3;
+    animation-duration: 9s; }
+
+.adjective {
+  flex: 1; }
 
 .contact-me {
   line-height: 3em; }
@@ -289,12 +389,16 @@ a:visited {
     color: #ffffff; }
   body.zissou .skill .desc {
     text-shadow: 0 0 1px #E5C39E; }
-  body.zissou .skill.nonsense {
-    color: rgba(245, 75, 26, 0.7) !important; }
   body.zissou a.skill:link, body.zissou a.skill:visited {
     color: #ffffff; }
   body.zissou a.skill:focus, body.zissou a.skill:hover {
     background-color: rgba(229, 195, 158, 0.5); }
+  body.zissou .adjectives {
+    color: rgba(245, 75, 26, 0.7); }
+  body.zissou .adjectives-caroussel:before {
+    background: linear-gradient(180deg, #c3ced0 0%, rgba(195, 206, 208, 0) 100%); }
+  body.zissou .adjectives-caroussel:after {
+    background: linear-gradient(0deg, #c3ced0 0%, rgba(195, 206, 208, 0) 100%); }
   @media (max-width: 767px) {
     body.zissou .contact-me .btn:last-child {
       border-bottom-color: rgba(229, 195, 158, 0.3); } }

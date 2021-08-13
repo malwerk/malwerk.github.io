@@ -1,0 +1,12 @@
+- name:
+    nl: "Pragmatisch(e)"
+    en: "Pragmatic"
+  cssclass: "pragmatic"
+- name:
+    nl: "No-nonsense"
+    en: "No-nonsense"
+  cssclass: "nonsense"
+- name:
+    nl: "Technisch(e)"
+    en: "Technical"
+  cssclass: "technical"
