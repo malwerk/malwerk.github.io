@@ -263,32 +263,36 @@ a:visited {
 
 body.zissou {
   background-color: #C3CED0;
-  color: #1B346C; }
+  color: #ffffff; }
   body.zissou a,
   body.zissou a:link
 a:visited {
-    color: #F54B1A; }
+    color: rgba(245, 75, 26, 0.7); }
   body.zissou a:hover,
   body.zissou a:focus {
-    border-bottom-color: #F54B1A; }
+    border-bottom-color: #f54b1a; }
   body.zissou .btn {
     background-color: transparent;
     border-color: rgba(229, 195, 158, 0.2); }
     body.zissou .btn:hover, body.zissou .btn:focus {
-      border-color: #01ABE9;
-      background-color: #01ABE9;
-      color: #C3CED0; }
+      border-color: #ffffff;
+      background-color: #ffffff;
+      color: #666; }
+  body.zissou .logo #eline,
+  body.zissou .logo #kline,
+  body.zissou .logo #aline {
+    display: none; }
   body.zissou .logo #logo {
-    fill: #01ABE9; }
+    fill: rgba(255, 255, 255, 0.25); }
   body.zissou .lang-selector .en:lang(en),
   body.zissou .lang-selector .nl:lang(nl) {
-    color: #1B346C; }
+    color: #ffffff; }
   body.zissou .skill .desc {
     text-shadow: 0 0 1px #E5C39E; }
   body.zissou .skill.nonsense {
-    color: #F54B1A !important; }
+    color: rgba(245, 75, 26, 0.7) !important; }
   body.zissou a.skill:link, body.zissou a.skill:visited {
-    color: #1B346C; }
+    color: #ffffff; }
   body.zissou a.skill:focus, body.zissou a.skill:hover {
     background-color: rgba(229, 195, 158, 0.5); }
   @media (max-width: 767px) {

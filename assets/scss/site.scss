@@ -371,12 +371,13 @@ body.wk {
 } //body.wk
 
 
-$zissou-altaccent: #F54B1A;
-$zissou-accent:#01ABE9;
+$zissou-altaccent: rgba(245, 75, 26,1);
+$zissou-altaccent2: rgba(245, 75, 26,.7);
+$zissou-accent:rgba(255,255,255,.25);
 $zissou-bgaccent:#E5C39E;
 $zissou-bg:#C3CED0;
-$zissou-text:#1B346C;
-$zissou-black:#000000;
+$zissou-text:#ffffff;
+$zissou-black:#666;
 
 body.zissou {
 	background-color: $zissou-bg;
@@ -385,7 +386,7 @@ body.zissou {
 	a,
 	a:link
 	a:visited {
-		color: $zissou-altaccent;
+		color: $zissou-altaccent2;
 	}
 	a:hover,
 	a:focus {
@@ -396,12 +397,16 @@ body.zissou {
 		border-color: transparentize($zissou-bgaccent, .8);
 		&:hover,
 		&:focus {
-			border-color: $zissou-accent;
-			background-color: $zissou-accent;
-			color: $zissou-bg;
+			border-color: $zissou-text;
+			background-color: $zissou-text;
+			color: $zissou-black;
 		}
 	}
 	.logo {
+
+		#eline,
+		#kline,
+		#aline {display: none;}
 
 		#logo {
 			fill: $zissou-accent;
@@ -418,7 +423,7 @@ body.zissou {
 		.desc {
 			text-shadow: 0 0 1px $zissou-bgaccent;
 		}
-		&.nonsense { color: $zissou-altaccent!important; }
+		&.nonsense { color: $zissou-altaccent2!important; }
 	}
 	a.skill {
 
