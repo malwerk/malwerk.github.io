@@ -412,10 +412,10 @@ a.skill {
   animation-iteration-count: infinite; }
   .adjectives.size-4 {
     animation-name: carousel-4;
-    animation-duration: 12s; }
+    animation-duration: 20s; }
   .adjectives.size-3 {
     animation-name: carousel-3;
-    animation-duration: 9s; }
+    animation-duration: 15s; }
 
 .adjective {
   flex: 1; }
